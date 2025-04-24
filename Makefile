@@ -1,13 +1,12 @@
 install:
-    pip install -r requirements.txt
-
+	pip install -r /Users/nandinipatnaik/Documents/interview/build/requirments.txt
 test:
-    pytest
+	pytest
 
 build:
-    python setup.py sdist bdist_wheel
+	python setup.py sdist bdist_wheel
 
 clean:
-    rm -rf build dist *.egg-info
+	rm -rf build dist *.egg-info
 
-all: install test build
+all: install test build clean
